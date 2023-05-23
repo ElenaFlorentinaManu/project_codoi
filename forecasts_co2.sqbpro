@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/manuc/OneDrive/Desktop/ITSchool/Codoi/forecasts_co2.db" readonly="0" foreign_keys="" case_sensitive_like="" temp_store="" wal_autocheckpoint="" synchronous=""/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="125"/><column_width id="3" width="2202"/><column_width id="4" width="0"/></tab_structure><tab_browse><current_table name="0,0:"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1">CREATE table one
+(id INTEGER PRIMARY KEY AUTOINCREMENT,
+name TEXT NOT NULL);
+insert INTO one (name)
+VALUES (&quot;Paul&quot;);
+insert INTO one (name)
+VALUES (&quot;Mary&quot;);
+SELECT tests.destination_country, tests.due_date_plant, one.name
+FROM tests
+INNER JOIN one
+ON tests.id = one.id
+
+</sql><current_tab id="0"/></tab_sql></sqlb_project>
